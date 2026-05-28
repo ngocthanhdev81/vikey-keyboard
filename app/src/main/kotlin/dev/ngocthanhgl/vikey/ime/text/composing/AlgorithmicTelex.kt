@@ -504,7 +504,8 @@ class AlgorithmicTelex(
             }
         }
 
-        val consonantRun = lower.split(Regex("[aeiouyăâêôơ]")).filter { it.isNotEmpty() }
+        val cleaned = stripTones(lower)
+        val consonantRun = cleaned.split(Regex("[aeiouyăâêôơ]")).filter { it.isNotEmpty() }
         if (consonantRun.any { it.length > 3 }) return true
 
         val vowelCount = lower.count { toBaseForm(it) in baseVowels }
