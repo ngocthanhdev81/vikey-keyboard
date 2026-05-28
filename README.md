@@ -1,22 +1,12 @@
 <p align="center">
-  <img src=".github/repo_icon.png" width="96" height="96" alt="ViKey">
-</p>
-
-<h1 align="center">ViKey</h1>
-
-<p align="center">
-  <strong>Vietnamese Telex Keyboard for Android</strong><br>
-  A fork of <a href="https://github.com/florisboard/florisboard">FlorisBoard</a> with a ground-up rewritten Telex engine.
+  <img src=".github/repo_banner.svg" width="100%" alt="ViKey">
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat&logo=kotlin&logoColor=white" alt="Kotlin">
   <img src="https://img.shields.io/badge/API_26+-3DDC84?style=flat&logo=android&logoColor=white" alt="API 26+">
   <img src="https://img.shields.io/badge/License-Apache_2.0-blue" alt="License">
-  <img src="https://img.shields.io/badge/Telex_Engine-v1.0.2.9-purple" alt="v1.0.2.9">
 </p>
-
----
 
 ## Why ViKey?
 
