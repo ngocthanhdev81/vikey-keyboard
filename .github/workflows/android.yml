@@ -25,6 +25,12 @@ jobs:
         uses: lukka/get-cmake@v4.0.2
       - name: Build with Gradle
         run: ./gradlew clean assembleRelease
+      - name: Rename APK
+        run: |
+          mv app/build/outputs/apk/release/app-release.apk \
+             app/build/outputs/apk/release/ViKey-${TAG}-universal.apk
+        env:
+          TAG: "v1.1.0.1"
       - name: Create Release
         if: github.ref == 'refs/heads/main'
         env:
@@ -37,4 +43,4 @@ jobs:
             --repo ${{ github.repository }} \
             --title "ViKey $TAG" \
             --notes "APK with algorithmic Telex — English/Vietnamese suggestions removed (they interfered with Telex composing and caused bugs like vowel loss and word duplication)" \
-            app/build/outputs/apk/release/app-release.apk
+            app/build/outputs/apk/release/ViKey-${TAG}-universal.apk
