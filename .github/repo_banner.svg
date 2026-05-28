@@ -40,16 +40,16 @@
   <!-- VK Logo group centered vertically at y=160 -->
   <g transform="translate(100, 160)">
     <!-- Glow behind logo -->
-    <circle cx="55" cy="0" r="48" fill="#FFB300" opacity="0.06"/>
+    <circle cx="58" cy="0" r="48" fill="#FFB300" opacity="0.06"/>
 
     <!-- V letter -->
-    <path d="M30,-42 L42,10 L42,10" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none"/>
-    <path d="M42,10 L54,-42" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M33,-42 L45,10 L45,10" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M45,10 L57,-42" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none"/>
 
     <!-- K letter -->
-    <path d="M66,-42 L66,10" stroke="#FFB300" stroke-width="6" stroke-linecap="round" fill="none"/>
-    <path d="M66,-18 L80,-32" stroke="#FFB300" stroke-width="6" stroke-linecap="round" fill="none"/>
-    <path d="M66,-18 L80,-4" stroke="#FFB300" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M68,-42 L68,10" stroke="#FFB300" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M68,-18 L82,-32" stroke="#FFB300" stroke-width="6" stroke-linecap="round" fill="none"/>
+    <path d="M68,-18 L82,-4" stroke="#FFB300" stroke-width="6" stroke-linecap="round" fill="none"/>
   </g>
 
   <!-- Separator line -->
@@ -61,8 +61,8 @@
 
   <!-- Badge -->
   <g transform="translate(220, 215)">
-    <rect x="-2" y="-12" width="170" height="24" rx="12" fill="none" stroke="#FFB300" stroke-width="1" opacity="0.5"/>
-    <text x="83" y="5" font-family="monospace" font-size="12" fill="#FFB300" text-anchor="middle" opacity="0.8">Algorithmic Telex Engine</text>
+    <rect x="-2" y="-12" width="210" height="24" rx="12" fill="none" stroke="#FFB300" stroke-width="1" opacity="0.5"/>
+    <text x="103" y="5" font-family="monospace" font-size="12" fill="#FFB300" text-anchor="middle" opacity="0.8">Algorithmic Telex Engine</text>
   </g>
 
   <!-- Right side decorative arc -->
