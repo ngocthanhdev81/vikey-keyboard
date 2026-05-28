@@ -5,30 +5,10 @@
     android:viewportHeight="108">
 
   <group android:translateY="2">
-    <path
-        android:pathData="M28,34L40,72"
-        android:strokeWidth="6"
-        android:strokeColor="#FFFFFF"
-        android:strokeLineCap="round"/>
-    <path
-        android:pathData="M40,72L52,34"
-        android:strokeWidth="6"
-        android:strokeColor="#FFFFFF"
-        android:strokeLineCap="round"/>
-    <path
-        android:pathData="M60,34L60,72"
-        android:strokeWidth="6"
-        android:strokeColor="#FFFFFF"
-        android:strokeLineCap="round"/>
-    <path
-        android:pathData="M60,52L76,36"
-        android:strokeWidth="6"
-        android:strokeColor="#FFFFFF"
-        android:strokeLineCap="round"/>
-    <path
-        android:pathData="M60,52L76,68"
-        android:strokeWidth="6"
-        android:strokeColor="#FFFFFF"
-        android:strokeLineCap="round"/>
+    <path android:pathData="M36,40L44,66" android:strokeWidth="6" android:strokeColor="#FFFFFF" android:strokeLineCap="round"/>
+    <path android:pathData="M44,66L53,40" android:strokeWidth="6" android:strokeColor="#FFFFFF" android:strokeLineCap="round"/>
+    <path android:pathData="M58,40L58,66" android:strokeWidth="6" android:strokeColor="#FFFFFF" android:strokeLineCap="round"/>
+    <path android:pathData="M58,52L69,41" android:strokeWidth="6" android:strokeColor="#FFFFFF" android:strokeLineCap="round"/>
+    <path android:pathData="M58,52L69,64" android:strokeWidth="6" android:strokeColor="#FFFFFF" android:strokeLineCap="round"/>
   </group>
 </vector>

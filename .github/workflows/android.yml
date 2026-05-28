@@ -2,7 +2,7 @@ name: ViKey CI
 
 on:
   push:
-    branches: [ main, telex-fix ]
+    branches: [ main ]
     paths-ignore:
       - ".github/ISSUE_TEMPLATE/**"
       - ".github/PULL_REQUEST_TEMPLATE.md"
@@ -17,7 +17,7 @@ on:
       - "README.md"
       - "ROADMAP.md"
   pull_request:
-    branches: [ main, telex-fix ]
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -43,7 +43,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean assembleRelease
       - name: Create Release
-        if: github.ref == 'refs/heads/telex-fix'
+        if: github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
