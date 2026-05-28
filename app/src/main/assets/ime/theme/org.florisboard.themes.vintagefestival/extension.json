@@ -1,0 +1,316 @@
+{
+  "$": "ime.extension.theme",
+  "meta": {
+    "id": "dev.ngocthanhgl.vikey.themes.vintagefestival",
+    "version": "6.0.0",
+    "title": "ViKey Vintage Festival Themes",
+    "homepage": "https://github.com/ngocthanhgl/vikey-themes",
+    "issueTracker": "https://github.com/ngocthanhgl/vikey-themes/issues",
+    "maintainers": [
+      "NgocThanhGL <ngocthanhgl@proton.me>"
+    ],
+    "license": "MIT"
+  },
+  "themes": [
+    {
+      "id": "tet_amoled",
+      "label": "🎊 Tết Nguyên Đán AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "tet_light",
+      "label": "🎊 Tết Nguyên Đán Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "trungThu_amoled",
+      "label": "🥮 Tết Trung Thu AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "trungThu_light",
+      "label": "🥮 Tết Trung Thu Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "halloween_amoled",
+      "label": "🎃 Halloween AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "halloween_light",
+      "label": "🎃 Halloween Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "christmas_amoled",
+      "label": "🎄 Christmas AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "christmas_light",
+      "label": "🎄 Christmas Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "diwali_amoled",
+      "label": "🪔 Diwali AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "diwali_light",
+      "label": "🪔 Diwali Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "holi_amoled",
+      "label": "🎨 Holi Festival AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "holi_light",
+      "label": "🎨 Holi Festival Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "valentine_amoled",
+      "label": "💝 Valentine's Day AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "valentine_light",
+      "label": "💝 Valentine's Day Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "sakura_amoled",
+      "label": "🌸 Sakura Hanami AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "sakura_light",
+      "label": "🌸 Sakura Hanami Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "oktoberfest_amoled",
+      "label": "🍺 Oktoberfest AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "oktoberfest_light",
+      "label": "🍺 Oktoberfest Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "carnival_amoled",
+      "label": "🎭 Carnival Mardi Gras AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "carnival_light",
+      "label": "🎭 Carnival Mardi Gras Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "claude_amoled",
+      "label": "🤖 Claude Anthropic AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "claude_light",
+      "label": "🤖 Claude Anthropic Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    },
+    {
+      "id": "vintageGrayGold_amoled",
+      "label": "✨ Vintage Gray Gold AMOLED",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      }
+    },
+    {
+      "id": "vintageGrayGold_light",
+      "label": "✨ Vintage Gray Gold Light",
+      "authors": [
+        "NgocThanhGL"
+      ],
+      "materialYouFlags": {
+        "paletteStyle": "Neutral",
+        "contrastLevel": "Default",
+        "specVersion": "SPEC_2021"
+      },
+      "isNight": false
+    }
+  ]
+}
