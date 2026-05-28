@@ -265,10 +265,11 @@ class AlgorithmicTelex(
         val base = toBaseForm(current)
         val toned = toneMaps[toneKey]?.get(base) ?: current
 
-        if (current == toned) {
+        if (current.lowercaseChar() == toned) {
             val before = word.substring(0, tonePos)
             val after = word.substring(tonePos + 1)
-            return word.length to (before + base + after + toneKey)
+            val casedBase = if (current.isUpperCase()) base.uppercaseChar() else base
+            return word.length to (before + casedBase + after + toneKey)
         }
 
         val chars = word.toCharArray()
@@ -344,7 +345,8 @@ class AlgorithmicTelex(
         val last = word.lastOrNull()
 
         if (last?.lowercaseChar() == 'ư' && word.length > 1) {
-            return word.length to (word.dropLast(1) + 'u' + ch)
+            val uChar = if (last.isUpperCase()) 'U' else 'u'
+            return word.length to (word.dropLast(1) + uChar + ch)
         }
 
         if (last?.lowercaseChar() == 'w') {
