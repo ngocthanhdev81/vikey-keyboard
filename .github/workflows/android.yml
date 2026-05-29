@@ -64,7 +64,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          gh release create "$GITHUB_REF_NAME" \
+          gh release create "$GITHUB_REF_NAME" --edit \
             --repo ${{ github.repository }} \
             --title "ViKey $GITHUB_REF_NAME" \
             --notes "APK with algorithmic Telex — English/Vietnamese suggestions removed (they interfered with Telex composing and caused bugs like vowel loss and word duplication)" \
