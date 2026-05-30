@@ -26,8 +26,6 @@ ViKey replaces FlorisBoard Telex with a **syllable-based recomposition engine** 
 //   algorithmic — any valid Vietnamese sequence works
 ```
 
-## Architecture
-
 ### Pure-Function Composer
 
 The `Composer` interface is a stateless, deterministic function — given the same preceding text and the same input character, it always produces the same output. There is no internal buffer, no mutable state, no hidden accumulator. This eliminates entire classes of bugs that plague traditional IMEs:
@@ -103,7 +101,7 @@ Type `z` at the end of any word to strip all tones:
 
 | Type | See |
 |------|-----|
-| `cháof` | `chao` |
+| `ỚỚz` | `chao` |
 | `chàoz` | `chao` |
 
 If no tones exist, `z` is literal text.
@@ -156,7 +154,7 @@ Three-case mode system threaded through every transform path:
 | Mode | Input | Output |
 |------|-------|--------|
 | UPPER | `AA` | `Â` |
-| UPPER | `UOWS` | `ỚỚ` |
+| UPPER | `UOWS` | `ƯỚ` |
 | Capitalized | `Aa` | `â` |
 | Capitalized | `Uow` | `Ươ` |
 | lower | `aa` | `â` |
