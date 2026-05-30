@@ -28,19 +28,19 @@ ViKey replaces FlorisBoard with a **syllable-based recomposition engine** writte
 
 ## At a Glance
 
-| | ViKey | FlorisBoard | Other FOSS Telex IMEs |
+| | ViKey | Other FOSS Telex IMEs |
 |---|---|---|---|
-| **Engine** | Syllable-based recomposition | JSON replacement rules | Lookup table or regex |
-| **Vocabulary** | Infinite (algorithmic) | Table-bound | Table-bound |
-| **Tone placement** | Orthographic 1984 | Priority-heuristic | Heuristic or last-vowel |
-| **`gi`/`qu` tone target** | On the real vowel (`giá`) | On `i` (`gía`) | Usually wrong |
-| **Diphthong/triphthong rules** | 30+ vowel clusters | Partial | Partial |
-| **`z` undo** | Strip tones, return to base | Not supported | Not supported |
-| **Shortcut undo** | `ư+w→w`, `â+a→aa`, `ô+o→oo` | Not supported | Not supported |
-| **`ww`→`w` lifecycle** | `w→w`, `ư+w→w`, `ww→w` | Produces `ưw` | Usually broken |
-| **English fallback** | 3 heuristics (patterns, coda, density) | Not supported | Manual mode switch |
-| **Case preservation** | Per-character, 3 modes | First-char only | Partial |
-| **Recomposition** | Full re-parse — no state, no drift | Accumulates errors | Cumulative mutations |
+| **Engine** | Syllable-based recomposition | Lookup table or regex |
+| **Vocabulary** | Infinite (algorithmic) | Table-bound |
+| **Tone placement** | Orthographic 1984 | Heuristic or last-vowel |
+| **`gi`/`qu` tone target** | On the real vowel (`giá`) | Usually wrong |
+| **Diphthong/triphthong rules** | 30+ vowel clusters | Partial |
+| **`z` undo** | Strip tones, return to base | Not supported |
+| **Shortcut undo** | `ư+w→w`, `â+a→aa`, `ô+o→oo` | Not supported |
+| **`ww`→`w` lifecycle** | `w→w`, `ư+w→w`, `ww→w` | Usually broken |
+| **English fallback** | 3 heuristics (patterns, coda, density) | Manual mode switch |
+| **Case preservation** | Per-character, 3 modes | Partial |
+| **Recomposition** | Full re-parse — no state, no drift | Cumulative mutations |
 
 ---
 
