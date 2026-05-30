@@ -17,9 +17,7 @@
 
 ## Why ViKey
 
-Every other Telex keyboard uses a lookup table — a giant dictionary mapping every possible key sequence to its Vietnamese output. If a combination isn't in the table, the engine can't produce it. This is fundamentally limited: new words, rare syllables, inconsistent tone placement, and accumulated drift are baked into the architecture.
-
-ViKey replaces this with a **syllable-based recomposition engine** written in pure Kotlin. It understands Vietnamese phonology — not just character mappings. Each keystroke triggers a full parse of the current syllable, applies Vietnamese orthographic rules, and recomposes the correct output from first principles. No JSON. No lookup tables. No accumulated drift.
+ViKey replaces FlorisBoard with a **syllable-based recomposition engine** written in pure Kotlin. It understands Vietnamese phonology — not just character mappings. Each keystroke triggers a full parse of the current syllable, applies Vietnamese orthographic rules, and recomposes the correct output from first principles. No JSON. No lookup tables. No accumulated drift.
 
 ```kotlin
 // FlorisBoard (mutation-based): "chaos" → "chào"
@@ -30,16 +28,16 @@ ViKey replaces this with a **syllable-based recomposition engine** written in pu
 
 ## At a Glance
 
-| | ViKey | FlorisBoard | Other Telex IMEs |
+| | ViKey | FlorisBoard | Other FOSS Telex IMEs |
 |---|---|---|---|
 | **Engine** | Syllable-based recomposition | JSON replacement rules | Lookup table or regex |
 | **Vocabulary** | Infinite (algorithmic) | Table-bound | Table-bound |
-| **Tone placement** | Orthographic (1984 Quốc Ngữ) | Priority-heuristic | Heuristic or last-vowel |
+| **Tone placement** | Orthographic 1984 | Priority-heuristic | Heuristic or last-vowel |
 | **`gi`/`qu` tone target** | On the real vowel (`giá`) | On `i` (`gía`) | Usually wrong |
 | **Diphthong/triphthong rules** | 30+ vowel clusters | Partial | Partial |
 | **`z` undo** | Strip tones, return to base | Not supported | Not supported |
-| **Shortcut undo** | `ư+w→uw`, `â+a→aa`, `ô+o→oo` | Not supported | Not supported |
-| **`ww`→`w` lifecycle** | `w→ư`, `ư+w→uw`, `ww→w` | Produces `ưw` | Usually broken |
+| **Shortcut undo** | `ư+w→w`, `â+a→aa`, `ô+o→oo` | Not supported | Not supported |
+| **`ww`→`w` lifecycle** | `w→w`, `ư+w→w`, `ww→w` | Produces `ưw` | Usually broken |
 | **English fallback** | 3 heuristics (patterns, coda, density) | Not supported | Manual mode switch |
 | **Case preservation** | Per-character, 3 modes | First-char only | Partial |
 | **Recomposition** | Full re-parse — no state, no drift | Accumulates errors | Cumulative mutations |
@@ -104,7 +102,7 @@ In Vietnamese, `gi` and `qu` are complex initials — the `i` in `gi` and the `u
 
 ```
 Type "gias"  →  ViKey: "giá"    Everywhere else: "gía"
-Type "quas"  →  ViKey: "quá"    Everywhere else: "qúá"
+Type "quas"  →  ViKey: "quá"    Everywhere else: "qúa"
 ```
 
 Only skipped when a real vowel exists elsewhere in the syllable.
@@ -123,7 +121,7 @@ Type `z` at the end of any word to strip all tones:
 
 | Type | See |
 |------|-----|
-| `cháof` | `chào` |
+| `cháof` | `chao` |
 | `chàoz` | `chao` |
 
 If no tones exist, `z` is literal text.
@@ -137,7 +135,7 @@ Press the second shortcut key again to undo it:
 | `aa` | `â` |
 | `âa` | `aa` |
 | `uw` | `ư` |
-| `ưw` | `uw` |
+| `ưw` | `w` |
 | `uow` | `ươ` |
 | `ươw` | `uow` |
 
@@ -149,10 +147,9 @@ Works for all 7 shortcuts: `aw(ă)` `aa(â)` `ee(ê)` `oo(ô)` `ow(ơ)` `uw(ư)`
 
 | Type | See | Path |
 |------|-----|------|
-| `w` | `ư` | First character → `ư` |
-| `ww` | `w` | Undo: `ư` → `w` |
+| `w` | `w` | First character → `w` |
 | `kw` | `kư` | Consonant + `w` → `kư` |
-| `kưw` | `kuw` | Undo: `ư` → `u` + `w` |
+| `kưw` | `kw` | Undo: `ư` → `w` |
 | `aw` | `ă` | Shortcut: `aw` → `ă` |
 | `uw` | `ư` | Shortcut: `uw` → `ư` |
 
@@ -178,7 +175,7 @@ Three-case mode system threaded through every transform path:
 |------|-------|--------|
 | UPPER | `AA` | `Â` |
 | UPPER | `UOWS` | `ỚỚ` |
-| Capitalized | `Aa` | `Ââ` |
+| Capitalized | `Aa` | `â` |
 | Capitalized | `Uow` | `Ươ` |
 | lower | `aa` | `â` |
 | lower | `uows` | `ướ` |
@@ -198,7 +195,7 @@ Three-case mode system threaded through every transform path:
 ## Technical Highlights
 
 - **Zero dictionary dependency** — no word list, no ML, no network. Pure algorithmic Vietnamese phonology.
-- **No JSON lookup tables** — 100% Kotlin. The entire engine is 591 lines.
+- **No JSON lookup tables** — 100% Kotlin.
 - **30+ orthographic tone rules** — covers all Vietnamese diphthongs and triphthongs.
 - **3-layer English detection** — patterns, coda validation, vowel density heuristics.
 - **Stateless composer** — pure function, no mutation, no drift. Trivially testable.
